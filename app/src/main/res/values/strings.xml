@@ -13,9 +13,8 @@
     <string name="agree_and_continue">Agree and Continue</string>
     <string name="login">Login</string>
     <string name="or">or</string>
-    <string name="continue">Continue</string>
+    <string name="continue_txt">Continue</string>
     <string name="login_or_sign_up">Login or sign up</string>
-    <string name="continue">Continue</string>
     <string name="sign_up">Sign Up</string>
     <string name="room">Room</string>
 </resources>

@@ -7,4 +7,368 @@
     android:background="@color/main"
     tools:context=".Details">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/topBarLayout"
+        android:backgroundTint="#272828"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:menu="@menu/top_menu"/>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/room3"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/thumbnails"
+        android:layout_below="@+id/topBarLayout"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thumbnails"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Cozy Modern Guest House Echo Park"
+        android:id="@+id/description"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layer3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_centerVertical="true"
+            android:id="@+id/star"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/star"
+            android:id="@+id/ratings"
+            android:layout_centerVertical="true"
+            android:text="5.00 (213 reviews) \u00B7"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ratings"
+            android:id="@+id/location"
+            android:text="Los Angeles, California, United States"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layer3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/layer4"
+        android:layout_marginEnd="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/card"
+            app:cardCornerRadius="70dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:id="@+id/ownerImg"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hostName"
+            android:text="Entire guesthouse hosted by Greta"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/card"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layer4"
+        android:id="@+id/layer5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 guests \u00B7 Studio \u00B7 1 bed \u00B7 1 bath"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/room_details"
+            android:fontFamily="@font/roboto"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/layer6"
+        android:layout_below="@+id/layer5"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:id="@+id/home_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/home_icon"
+            android:textColor="@color/white"
+            android:text="Entire home"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/home_desc1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/home_icon"
+            android:textColor="@color/white"
+            android:layout_below="@+id/home_desc1"
+            android:text="You'll have the guesthouse to yourself"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/home_desc2"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/layer7"
+        android:layout_below="@+id/layer6"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/enhance"
+            android:id="@+id/enhance_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/enhance_icon"
+            android:textColor="@color/white"
+            android:text="Enhanced Clean"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/enhance_desc1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/enhance_icon"
+            android:textColor="@color/white"
+            android:layout_below="@+id/enhance_desc1"
+            android:text="You'll have the guesthouse to yourself"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/enhance_desc2"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/layer8"
+        android:layout_below="@+id/layer7"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/checkin"
+            android:id="@+id/checkin_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/checkin_icon"
+            android:textColor="@color/white"
+            android:text="Self Check-in"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/checkin_desc1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/checkin_icon"
+            android:textColor="@color/white"
+            android:layout_below="@+id/checkin_desc1"
+            android:text="You'll have the guesthouse to yourself"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/checkin_desc2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/layer9"
+        android:layout_below="@+id/layer8"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/host"
+            android:id="@+id/host_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/host_icon"
+            android:textColor="@color/white"
+            android:text="Greta is a Superhost"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/host_desc1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/host_icon"
+            android:textColor="@color/white"
+            android:layout_below="@+id/host_desc1"
+            android:text="You'll have the guesthouse to yourself"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/host_desc2"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#272828"
+        android:id="@+id/bottom_layer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$74"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/cost"
+                android:fontFamily="@font/roboto_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/cost"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="/night"
+                android:id="@+id/duration"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interval"
+                android:layout_below="@+id/cost"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:text="25 May - 26 May"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:text="Reserve"
+                android:textAllCaps="false"
+                app:cornerRadius="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="16sp"
+                app:rippleColor="@color/white"
+                app:backgroundTint="@color/variant"
+                android:id="@+id/reserveBtn"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
 </RelativeLayout>

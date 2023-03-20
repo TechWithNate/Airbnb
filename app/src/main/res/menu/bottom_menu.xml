@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Explore"
+        android:id="@+id/explore_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"/>
+
+    <item android:title="Wishlist"
+        android:id="@+id/wish_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_favourite"/>
+
+    <item android:title="Trips"
+        android:enabled="true"
+        android:id="@+id/trips_menu"
+        android:icon="@drawable/trips"/>
+
+    <item android:title="Inbox"
+        android:id="@+id/inbox_menu"
+        android:enabled="true"
+        android:icon="@drawable/message"/>
+
+    <item android:title="Profile"
+        android:id="@+id/profile_menu"
+        android:enabled="true"
+        android:icon="@drawable/profile"/>
+
+</menu>

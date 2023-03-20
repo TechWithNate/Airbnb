@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "390057861144",
+    "project_id": "airbnb-9572a",
+    "storage_bucket": "airbnb-9572a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390057861144:android:1fa3f11391071030b9e36d",
+        "android_client_info": {
+          "package_name": "com.tech.airbnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390057861144-24ega5j32atjbi1n241daa7u26h2guit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.airbnb",
+            "certificate_hash": "b62c2cba3603f0053010ddcb06ffb0bec4437503"
+          }
+        },
+        {
+          "client_id": "390057861144-9krb8dgfgnoi075mcvot6f2snhrsomjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD4Axo2f9RyCjq6u00gb00qkDcg8Mgy7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390057861144-9krb8dgfgnoi075mcvot6f2snhrsomjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
